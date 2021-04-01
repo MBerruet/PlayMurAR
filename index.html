@@ -21,7 +21,10 @@
 
     <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false">   
 
-    <a-marker preset="hiro">
+    <!--<a-marker preset="hiro"> cambiamos el marker original por uno propio en la siguiente linea
+    -->
+    <a-marker preset='custom' type='pattern' url='pplay.patt'></a-marker>   	    
+	    
     <video id="mivideo" crossOrigin="anonymous" playsinline webkitplaysinline autoplay loop controls muted src="play.mp4"></video>
     <a-video src="#mivideo" position="0 0 0" rotation="270 0 0" ></a-video>
    
